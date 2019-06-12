@@ -1,0 +1,853 @@
+@charset "UTF-8";
+/* CSS Document - Portland State University Title IX Module
+|
+|	Main CSS Page by Rachel Stassi
+|	Copyright 2018 PSU
+|
+*/
+
+/* PSU COLORS
+
+PSU Green rgb(106, 127, 16) #6A7F10
+PSU Brown rgb(96, 53, 29) Hex: #60351D
+PSU Accent Green rgb(168, 180, 0) Hex: #A8B400
+PSU Sienna rgb(163, 63, 31) Hex: #A33F1F
+PSU Red rgb(210, 73, 42) Hex: #D2492A
+PSU Orange rgb(220, 155, 50) Hex: #DC9B32
+PSU Bright Orange rgb(232,171,0) Hex: #E8AB00
+PSU Light Orange rgb(255,195,28) Hex: #FFC31C
+PSU Yellow rgb(230, 220, 143) Hex: #E6DC8F
+PSU Tan rgb(232, 211, 162) Hex: #E8D3A2
+PSU Gray rgb(71, 67, 52) Hex: #474334
+PSU Bright Purple rgb(107, 17, 252) Hex: #970590
+PSU Purple rgb(126, 4, 120) Hex: #7E0478
+PSU Deep Purple rgb(101, 3, 96) Hex: #650360
+PSU Blue rgb(50, 115, 220) Hex: #3273DC
+PSU Deep Blue rgb(0, 117, 154) Hex: #00759A
+PSU Light Blue rgb(161, 216, 224) Hex: #DFF2F5
+
+*/
+
+/*	EMBEDDED FONTS	*/
+
+@font-face {
+	font-family: 'Lubalin Graph Book';
+	src: url(fonts/6032-webfont.eot);
+	src:
+		url(fonts/6032-webfont.woff) format("woff"),
+		url(fonts/6032-webfont.ttf) format("truetype"),
+		url(fonts/6032-webfont.svg) format("svg"); 
+}
+
+@font-face {
+	font-family: 'Lubalin Graph Medium';
+	src: url(fonts/lubalin_graph_medium_bt-webfont.eot);
+	src: 
+		url(fonts/lubalin_graph_medium_bt-webfont.woff) format("woff"), 
+		url(fonts/lubalin_graph_medium_bt-webfont.ttf) format("truetype"),
+		url(fonts/lubalin_graph_medium_bt-webfont.svg#lubalin_graph_medium) format("svg");
+}
+
+
+@font-face {
+	font-family: 'Reina';
+	src: url(fonts/reina_12_standard-webfont.eot);
+	src:
+		url(fonts/reina_12_standard-webfont.woff) format("woff"),
+		url(fonts/reina_12_standard-webfont.ttf) format("truetype"),
+		url(fonts/reina_12_standard-webfont.svg#reina) format("svg");	
+}
+
+@font-face {
+	font-family: 'Frutiger';
+	src: url(fonts/frutiger-webfont.eot);
+	src:
+		url(fonts/frutiger-webfont.woff) format("woff"),
+		url(fonts/frutiger-webfont.ttf) format("truetype"),
+		url(fonts/frutiger-webfont.svg#frutiger) format("svg");
+	
+}
+
+@font-face {
+	font-family: 'Frutiger Condensed';
+	src: url(fonts/frutigercondensed-webfont.eot);
+	src:
+		url(fonts/frutigercondensed-webfont.woff) format("woff"),
+		url(fonts/frutigercondensed-webfont.ttf) format("truetype"),
+		url(fonts/frutigercondensed-webfont.svg#frutiger_condensed) format("svg");
+	
+}
+
+/*
+@font-face {
+	font-family: '';
+	src: url(fonts/);
+	src:
+		url(fonts/) format("woff"),
+		url(fonts/) format("truetype"),
+		url(fonts/) format("svg");
+	
+}
+*/
+
+a:link {color: #FFF}
+
+html {
+  	font-size: 62.5%;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	top: 0;
+	left: 0;
+	height: 100%;
+	min-height: 675px;
+	
+	color: #000;
+  	font-size: 1.5em;
+	font-weight: 400;
+  	line-height: 1.6;
+	margin: 0;
+	overflow: auto;
+  	font-family: "Frutiger Condensed","Helvetica", "Arial","sans-serif";
+}
+
+/* Backgrounds */
+
+body#start {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/0-start.png");
+	
+	/* Parallax Scrolling */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#main {
+	
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/1-main.jpeg");
+	
+	/* Parallax Scrolling */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#tp {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/2-tp.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#pc {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/3-pc.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#gs {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/4-gs.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#dh {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/5-dh.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#sh {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/6-sh.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#cr {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/7-cr.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#ec {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/8-ec.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#ac {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/9-ac.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#sa {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/10-sa.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#st {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/11-st.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#se {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/12-se.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#dv {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/13-dv.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#sv {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/14-sv.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#rt {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/15-rt.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#ad {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/16-ad.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#ns {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/17-ns.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#cp {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/18-cp.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#cpa {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/18a-cp.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#hr {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/19-hr.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#rp1 {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/20-rp1.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#rp2 {
+	color: #FFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/21-rp2.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#bi {
+	color: #FFFFFF;
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/22-bi.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body#mr {
+	background: center center;
+	background-color: #9E9E9E;
+	background-image: url("images/23-mr.jpeg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+}
+
+/* Vertical Alignment */
+
+.outer {
+	overflow: auto;
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	height: auto;
+	width: 100%;
+}
+
+/* Divisions */
+
+.container {
+	display: block;
+	height: 100%;
+	width: 100%;
+	max-width: 90%;
+	padding: 1em 0;
+	margin: 0 5%;
+	overflow: auto;
+	box-sizing: border-box;
+}
+
+.column,
+.columns {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-left: 5%;
+}
+
+.one-third.column               { width: 30.6666666667%; }
+.two-thirds.column              { width: 65.3333333333%; }
+.one-half.column                { width: 48%; }
+
+.info {
+	margin: 0 5%;
+}
+
+.footer {
+	display: block;
+	padding: 1.5em;
+	width: 100%;
+	margin: 0 auto;
+	
+	background-color: rgba(232, 211, 162,.975);
+	border-style: solid;
+	border-width: 1em;
+	border-color: #FFFFFF;
+	
+	font-style: italic;
+	font-family: "Frutiger Condensed";
+}
+
+.welcome {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	margin-top: 2%;
+	margin-right: 2.5%;
+	padding: 1em;
+	background-color: #BB8020;
+	border-style: solid;
+	border-width: 1em;
+	border-color: #FFFFFF;
+}
+
+.purpose {
+	display: inline-block;
+	float: right;
+	width: 40%;
+	margin-top: 2%;
+	margin-left: 2.5%;
+	margin-bottom: 1.5em;
+	padding: 1em;
+	color: #FFFFFF;
+	background-color: #650360;
+	border-style: solid;
+	border-width: 1em;
+	border-color: #FFFFFF;
+}
+
+.titleIX {
+	display: inline-block;
+	background-color: rgba(252, 224, 17,.99);
+	border-style: solid;
+	border-width: 1em;
+	border-right-width: 0;
+	border-color: #FFFFFF;
+	padding: 2.5%;
+	margin: 5% 0 5% 5%;
+}
+
+.policies {
+	display: inline-block;
+	background-color: rgba(78, 180, 50,.99);
+	border-style: solid;
+	border-width: 1em;
+	border-left-width: 0;
+	border-color: #FFFFFF;
+	margin: 0% 5% 5% 0%;
+}
+
+/*  BASE STYLES  */
+/*  Note: html is set to 62.5% so that all the REM measurements 
+	throughout Skeleton are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+.stroke {
+    text-shadow:
+    -2px -2px 0 #EAEAEA,
+    2px -2px 0 #EAEAEA,
+    -2px 2px 0 #EAEAEA,
+    2px 2px 0 #EAEAEA;  
+}
+
+.borderbox {
+	display: block;
+	border-style: solid;
+	border-width: 1em;
+	border-color: #FFFFFF;
+}
+
+#faded {
+	display: block;
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.85);
+	background-repeat: repeat-y;
+}
+
+#arrow {
+	display: block;
+	margin: .25em auto 0 auto;
+	max-width: 17.5%;
+	width: auto
+}
+
+@media (min-width: 1283px) {
+	#arrow {
+		height: 0;
+		width: 0;
+		margin: 0;
+	}
+}
+
+/*	TYPOGRAPHY  */
+
+span {
+	padding-bottom: 1px;
+	border-bottom: 0.05em solid #DC9B32;
+}
+
+h0 {
+	display: block;
+	font-size: 2.25em;
+	font-family: "Lubalin Graph Book", "Times New Roman", "serif";
+	float: left;
+	text-align: left;
+	color: #FFF;
+	
+	margin: 2.5% 5% 0 5%;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-family: "Lubalin Graph Medium", "Times New Roman", "serif";
+	color: #DC9B32;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Reina', 'Times New Roman', 'serif';
+	color: #000000;
+	font-style: italic;
+	margin: 1em 0;
+}
+
+h3 {
+	font-family:  "Frutiger","Helvetica", "Arial","sans-serif";
+	margin: 0;	
+}
+
+ul {
+	margin: 0;
+}
+
+.indent {
+	text-indent: 1.5em;
+}
+
+.hanging {
+	padding-left: 1.5em;
+}
+
+.hanging-indent {
+	padding-left: 1.5em;
+	text-indent: -1.5em
+}
+
+.footer {
+	display: block;
+	
+	background-color: rgba(232, 211, 162,.975);
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1em;
+	
+	margin: 0 auto 2% auto;
+	padding: 1em;
+	width: 90.5%;
+}
+
+/*  RESIZING  */
+
+@media (min-width: 0px) and (max-width: 1282px) {
+	
+	.info, .welcome, .purpose, .footer {
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 87.5%;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	p, li {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 940px) {
+	.info, .welcome, .purpose, .footer {
+		max-width: 85%;
+		width: 100%;
+		margin: 1em auto;
+		min-width: none;
+	}
+	
+	.info {
+		margin: auto;
+	}
+	
+	p, li {
+		font-size: .95em;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 665px) {
+	.info, .welcome, .purpose, .footer {
+		max-width: 82.5%;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 590px) {
+	.info, .welcome, .purpose, .footer {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+	.info, .welcome, .purpose, .footer {
+		max-width: 77.5%;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 495px) {
+	.info, .welcome, .purpose, .footer {
+		max-width: 75%;
+	}
+}
